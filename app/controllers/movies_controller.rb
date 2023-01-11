@@ -44,6 +44,7 @@ class MoviesController < ApplicationController
     if @movie.update(movie_params)
       redirect_to @movie, notice: "Movie updated successfully."
     else
+      flash[:alert] = "You haz errors!"
       render "edit"
     end
   end
