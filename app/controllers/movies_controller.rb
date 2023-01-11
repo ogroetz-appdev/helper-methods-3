@@ -27,6 +27,7 @@ class MoviesController < ApplicationController
 
       redirect_to movies_url, notice: "Movie created successfully."
     else
+      flash[:alert] = "You haz errors!"
       render "new"
     end
   end
