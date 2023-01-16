@@ -10,12 +10,14 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <%# <a class="navbar-brand" href="/">Helper Methods 3</a> %>
     <%= link_to "Helper Methods 3", root_path, class: "navbar-brand" %>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,8 +28,8 @@
         <%= link_to "Movies", movies_path, class: "nav-link" %>
           <%# <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> %>
         </li>
-          <li class="nav-item active">
-            <%= link_to "Directors", directors_path, class: "nav-link" %>
+        <li class="nav-item active">
+          <%= link_to "Directors", directors_path, class: "nav-link" %>
           <%# <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> %>
         </li>
         <%# <li class="nav-item">
