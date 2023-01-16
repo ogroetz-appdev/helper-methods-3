@@ -301,3 +301,16 @@ Carefully read through all of the code that was generated. Do you understand all
 ## Solutions
 
 You can see my solutions for this project in [this pull request](https://github.com/appdev-projects/helper-methods-3/pull/1/files).
+
+### Commands during development:
+rails g migration AddImageUrlToMovies image_url:string
+rails db:migrate
+
+annotate gem ---> give the schema info in the model files
+
+rails g scaffold director name dob:date bio:text
+rails db:migrate
+
+rails g migration AddDirectorIdToMovies director_id:integer
+rails db:migrate
+

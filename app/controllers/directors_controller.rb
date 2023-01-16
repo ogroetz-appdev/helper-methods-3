@@ -21,6 +21,7 @@ class DirectorsController < ApplicationController
 
   # POST /directors or /directors.json
   def create
+    director_params = params.require(:director).permit(:name, :dob, :bio)
     @director = Director.new(director_params)
 
     respond_to do |format|

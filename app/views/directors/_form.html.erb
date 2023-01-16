@@ -11,7 +11,23 @@
     </div>
   <% end %>
 
+  <div>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :dob %>
+    <%= form.text_area :dob %>
+  </div>
+
+  <div>
+    <%= form.label :bio %>
+    <%= form.text_area :bio %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
+
 <% end %>
