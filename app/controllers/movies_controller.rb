@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
-  before_action :set_movie, only: [:show, :edit, :update, :destroy]
+  # before_action :set_movie, only: [:show, :edit, :update, :destroy]
+  before_action :set_movie, only: %i[show edit update destroy] # quick way to create an array of symbols
   # before_action :force_user_sign_in
 
   # def force_user_sign_in

@@ -323,3 +323,12 @@ m.to_partial_path
  -->
 
 rails g scaffold actor name dob:date bio:text
+
+
+gem:  to build user acct:
+gem "devise"
+bundle install
+rails g devise:install
+rails g devise user first_name last_name
+rails db:migrate
+restart server
