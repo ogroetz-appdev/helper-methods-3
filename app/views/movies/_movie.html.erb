@@ -1,0 +1,48 @@
+    <div class="card">
+      <div class="card-header">
+        <%= link_to "Movie ##{movie.id}", movie %>
+      </div>
+      <div class="card-body">
+        <dl>
+          <dt>
+          ID
+          </dt>
+          <dd>
+            <%= movie.id %>
+          </dd>
+                    <dt>
+          Title
+          </dt>
+          <dd>
+            <%= movie.title %>
+          </dd>
+
+          <td>
+            <%= movie.description %>
+          </td>
+
+          <td>
+            <%= movie.image_url %>
+          </td>
+
+          <td>
+            <%= movie.director_id %>
+          </td>
+
+                  <td>
+            <%= movie.released_on %>
+          </td>
+
+          <td>
+            <%= time_ago_in_words(movie.created_at) %> ago
+          </td>
+          <td>
+            <%= time_ago_in_words(movie.updated_at) %> ago
+          </td>
+
+          <td>
+            <%= link_to "Show details", movie %>
+          </td>
+        </dl>
+      </div>
+    </div>

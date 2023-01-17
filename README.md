@@ -314,3 +314,12 @@ rails db:migrate
 rails g migration AddDirectorIdToMovies director_id:integer
 rails db:migrate
 
+rails g migration AddReleasedOnToMovies released_on:date
+rails db:migrate
+
+<!-- rails c
+m = Movie.last
+m.to_partial_path
+ -->
+
+rails g scaffold actor name dob:date bio:text
